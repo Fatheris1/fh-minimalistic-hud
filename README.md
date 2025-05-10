@@ -6,6 +6,9 @@
 - 💰 Bank and cash balance.
 - 👥 Server players count.
 
+# Image
+![image](https://github.com/user-attachments/assets/554ae909-890b-4e15-9d0a-6243fbb4c189)
+
 # Requirements
 ESX Framework
 
