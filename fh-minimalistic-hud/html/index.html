@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern HUD</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header-text" class="header-text"></div>
+    <div class="hud-container">
+        <div class="hud-row">
+            <div class="hud-element id">
+                <i class="fas fa-id-card icon"></i>
+                <span id="player-id">ID: 0</span>
+            </div>
+            <span class="divider">|</span>
+            <div class="hud-element players">
+                <i class="fas fa-users icon"></i>
+                <span id="players-count">0/0</span>
+            </div>
+        </div>
+        <div class="hud-row">
+            <div class="hud-element time">
+                <i class="fas fa-clock icon"></i>
+                <span id="current-time">00:00</span>
+            </div>
+            <span class="divider">|</span>
+            <div class="hud-element date">
+                <i class="fas fa-calendar-alt icon"></i>
+                <span id="current-date">00/00/0000</span>
+            </div>
+        </div>
+        <div class="hud-row">
+            <div class="hud-element money">
+                <i class="fas fa-university icon"></i>
+                <span id="bank-money">$0</span>
+                <div id="bank-change" class="money-change"></div>
+            </div>
+            <span class="divider">|</span>
+            <div class="hud-element cash">
+                <i class="fas fa-money-bill-wave icon"></i>
+                <span id="cash-money">$0</span>
+                <div id="cash-change" class="money-change"></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 

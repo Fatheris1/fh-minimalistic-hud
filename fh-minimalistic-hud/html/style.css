@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.header-text {
+    position: absolute;
+    top: 1%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.5em;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    display: flex;
+    gap: 6px;
+    text-transform: uppercase;
+    font-family: 'Arial', sans-serif;
+    padding: 0.2em 1.2em 0.2em 1.2em;
+    background: rgba(0,0,0,0.0);
+    width: max-content;
+}
+
+.header-text .yellow {
+    color: #ffd700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.header-text .white {
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.hud-container {
+    position: absolute;
+    right: 2%;
+    top: 2%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: flex-end;
+}
+
+.hud-row {
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.hud-element {
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 8px;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.hud-element:hover {
+    transform: translateY(-2px);
+}
+
+.icon {
+    font-size: 1em;
+    color: #ffcc00;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    opacity: 0.9;
+    padding: 4px;
+    border-radius: 50%;
+    background: rgba(255, 204, 0, 0.1);
+    box-shadow: 0 0 10px rgba(255, 204, 0, 0.2);
+}
+
+#players-count, #current-time, #current-date, #bank-money, #player-id, #cash-money {
+    font-weight: 600;
+    font-size: 1em;
+    letter-spacing: 0.5px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.money-change {
+    position: absolute;
+    left: 50%;
+    bottom: -20px;
+    transform: translateX(-50%);
+    font-size: 0.8em;
+    font-weight: 600;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+
+.money-change.positive {
+    color: #00ff88;
+    animation: moneyChange 2s ease forwards;
+}
+
+.money-change.negative {
+    color: #ff4444;
+    animation: moneyChange 2s ease forwards;
+}
+
+@keyframes moneyChange {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, 0);
+    }
+    20% {
+        opacity: 1;
+        transform: translate(-50%, -10px);
+    }
+    80% {
+        opacity: 1;
+        transform: translate(-50%, -10px);
+    }
+    100% {
+        opacity: 0;
+        transform: translate(-50%, -20px);
+    }
+}
+
+.separator {
+    color: #ffcc00;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.divider {
+    color: #fff;
+    opacity: 0.25;
+    font-size: 1.2em;
+    font-weight: 400;
+    margin: 0 4px;
+    user-select: none;
+    pointer-events: none;
+    letter-spacing: 0;
+} 
