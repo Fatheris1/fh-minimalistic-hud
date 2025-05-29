@@ -72,7 +72,8 @@ function UpdateMoney(force)
                 })
             end
             lastBankMoney = playerData.money.bank
-        elseif (force or playerData.money.cash ~= lastCashMoney) then
+        end
+        if (force or playerData.money.cash ~= lastCashMoney) then
             if Config.Elements.cash.enabled then
                 SendNUIMessage({
                     type = 'updateCashMoney',
