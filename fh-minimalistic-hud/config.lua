@@ -1,4 +1,7 @@
 Config = {}
+
+Config.Framework = "qbx" -- esx, qb, qbx
+
 Config.HudSettings = { refreshRate = 1000 }
 Config.Elements = {
     id = { enabled = true },
