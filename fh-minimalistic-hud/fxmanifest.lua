@@ -9,6 +9,7 @@ ui_page 'html/index.html'
 
 shared_scripts {
     '@es_extended/imports.lua',
+    -- '@qbx_core/modules/playerdata.lua', -- comment out if not using qbx
     'config.lua'
 }
 
@@ -21,7 +22,3 @@ files {
     'html/style.css',
     'html/script.js'
 }
-
-dependencies {
-    'es_extended'
-} 
